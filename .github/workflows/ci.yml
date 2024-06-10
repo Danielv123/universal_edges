@@ -25,6 +25,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Check GitHub Context
+      run: echo "${{ toJson(github) }}"
     - uses: actions/checkout@v4
     - uses: Danielv123/actions-luacheck@patch-1
       with:
