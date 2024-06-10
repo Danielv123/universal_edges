@@ -3,12 +3,7 @@ name: CI
 on:
   push:
     tags:
-      - v*
-  # pull_request:
-  create:
-    tags:
-      - v*
-
+      - 'v*'
   workflow_dispatch:
 
 jobs:
